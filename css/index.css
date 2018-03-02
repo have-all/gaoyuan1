@@ -1,0 +1,455 @@
+/*主页main部分*/
+.main{
+    margin:10px 10px 10px 71px;
+}
+.main-slider{
+    float:left;
+    width: 590px;
+    height: 470px;
+    margin:0 0 0 220px;
+}
+/*轮播图开始*/
+.all{
+    width: 590px;
+    height: 470px;
+    padding:7px;
+    border: 1px solid #ccc;
+    position:relative;
+    /*margin:100px auto;*/
+}
+.screen{
+    width: 590px;
+    height: 470px;
+    position: relative;
+    overflow: hidden;
+}
+.screen ul{
+    width: 3540px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.screen ul li{
+    width: 590px;
+    height: 470px;
+    float:left;
+    overflow:hidden;
+}
+.all ol{
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    text-align:center;
+    line-height:20px;
+}
+.all ol li{
+    width: 20px;
+    height: 20px;
+    float:left;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor:pointer;
+    margin-left:10px;
+}
+/*这个current样式必须这么写，前边必须加.all ol li，因为上方加了，有优先级，不加优先级低，造成不显示情况。*/
+.all ol li.current{
+    background-color: yellow;
+}
+#arr {display: none;}
+#arr span{
+    width: 40px;
+    height: 40px;
+    line-height:40px;
+    top:50%;
+    position:absolute;
+    margin-top:-20px;
+    background-color: #000;
+    cursor:pointer;
+    text-align:center;
+    font-family:"黑体";
+    font-size:30px;
+    font-weight:bold;
+    color:#fff;
+    opacity:0.3;
+    border: 1px solid #fff;
+}
+#arr #right{right:5px;}
+#arr #left{left:5px;}
+.square{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+}
+span{
+    width: 16px;
+    height: 16px;
+    line-height:16px;
+    margin:3px;
+    display:inline-block;
+    cursor:pointer;
+    background-color: #fff;
+    text-align:center;
+    border: 1px solid #ccc;
+}
+.current{
+    background-color: darkorange;
+    color:#fff;
+}
+/*轮播图结束*/
+.rec_inner{
+    position:relative;
+}
+.rec_inner{
+    width: 210px;
+    height: 170px;
+    margin-left:821px;
+}
+.rec_item a{
+    display: block;
+    width: 210px;
+    height: 170px;
+}
+
+.main-news{
+    position: absolute;
+    top:0;
+    right:0;
+    margin-left:10px;
+}
+.rec_item a img{
+    margin: 0 10px 10px 10px;
+}
+.main{
+    position: relative;
+}
+.main-news{
+    float:right;
+    width: 188px;
+    height: 470px;
+    /*background-color: red;*/
+}
+.main-news-top{
+    height: 160px;
+    text-align:center;
+}
+.user{
+    position: relative;
+    padding-top:70px;
+    height:75px;
+}
+.user-show {
+    position: absolute;
+    left:39%;
+    top:-2px;
+    margin-left:-14px;
+    width: 65px;
+    height: 65px;
+
+}
+.user-show img{
+    width: 65px;
+    height: 65px;
+    border-radius:50%;
+}
+.user-show a{
+    position: absolute;
+    width: 106px;
+    height: 108px;
+    background: url("../images/main-news.png") no-repeat 0 0;
+    left:-17px;
+    top:-16px;
+}
+.user-name{
+    padding:7px 10px 0;
+}
+.user-name p{
+    width: 100%;
+    line-height:20px;
+    overflow:hidden;
+    color:#888;
+    white-space: nowrap;
+}
+.user-login{
+    margin-top:10px;
+    height:25px;
+}
+.user-login1{
+    display:inline-block;
+    margin:0 5px;
+    width: 70px;
+    height: 25px;
+    line-height:25px;
+    font-size:12px;
+    text-align:center;
+    color:#e43f3b;
+    border-radius:13px;
+    box-shadow: 4px 6px 12px 2px rgba(45,45,45,.15);
+    background-color: white;
+}
+.user-login2{
+    display:inline-block;
+    margin:0 5px;
+    width: 70px;
+    height: 25px;
+    line-height:25px;
+    font-size:12px;
+    text-align:center;
+    color:#DFE433;
+    border-radius:13px;
+    box-shadow: 4px 6px 12px 2px rgba(45,45,45,.15);
+    background-color: #342126;
+}
+.user-login1:hover,.user-login2:hover{
+    background-color: #FF3E61;
+    color:white;
+}
+.main-news-center{
+    overflow:hidden;
+    height: 150px;
+    background-color: #fff;
+}
+.main-news-center-div1{
+    padding:17px 0 0;
+    position:relative;
+    line-height:14px;
+}
+.main-news-center-div1 .a1{
+    font-size:12px;
+    color:#333;
+    padding-left:15px;
+    padding-right:15px;
+    border-right:1px solid #dfe0e1;
+}
+.main-news-center-div1 .a2{
+    font-size:12px;
+    color:#333;
+    padding-left:15px;
+    padding-right:15px;
+}
+.main-news-center-div1 .heng{
+    position: absolute;
+    left:58px;
+    bottom:-5px;
+    width: 27px;
+    height: 2px;
+    margin-left:13px;
+    background-color: #db192b;
+}
+.main-news-center-div1 .a3{
+    position: absolute;
+    font-size:12px;
+    right:12px;
+    top:18px;
+    color:#666
+}
+.main-news-center-div1 .a1:hover{
+    color:#C81623;
+}
+.main-news-center-div1 .a2:hover{
+    color:#C81623;
+}
+.main-news-center-div1 .a3:hover{
+    color:#C81623;
+}
+.main-news-center-div2{
+    padding-top: 12px;
+    position: relative;
+    margin:0 15px;
+    height:88px;
+}
+.main-news-center-div2 a{
+    color:#666;
+    line-height:22px;
+    white-space:nowrap;
+}
+.main-news-center-div2 a:hover{
+    color:#C81623
+}
+.main-footer{
+    border-top:2px solid #dfe0e1;
+}
+.main-footer a{
+    margin-top:16px;
+    display: block;
+}
+/*sk部分*/
+.sk{
+    margin-top:30px;
+    margin-bottom:30px;
+    position: relative;
+}
+.sk .sk_hd{
+    width: 190px;
+    height: 275px;
+    color:white;
+    background-color: #e83632;
+    position: relative;
+    float:left;
+}
+.sk .sk_hd a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.sk .sk_hd .sk1{
+    position: absolute;
+    left:0;
+    top:42px;
+    width: 100%;
+    text-align:center;
+    font-size: 34px;
+    color:#fff;
+}
+.sk .sk_hd .sk2{
+    position: absolute;
+    left:0;
+    top:90px;
+    width: 100%;
+    text-align:center;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.sk .sk_hd .sk_ico{
+    position: absolute;
+    left:86px;
+    top: 126px;
+    width: 20px;
+    height: 33px;
+    background:url("../images/shandian.png") no-repeat -35px -25px;
+}
+.sk .sk_hd .sk3{
+    position: absolute;
+    left:0;
+    width: 100%;
+    text-align:center;
+    top:170px;
+    font-size:16px;
+    color:#fff;
+}
+.sk .sk_hd .sk4{
+    position: absolute;
+    left:30px;
+    top:212px;
+    height:40px;
+}
+.sk4_time{
+    position: relative;
+    float:left;
+    width: 40px;
+    height: 40px;
+    text-align:center;
+    background-color: #2f3430;
+    margin-right:5px;
+}
+.sk4_time::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left:0;
+    top: 50%;
+    width: 100%;
+    height:1px;
+    background-color: #e83632;
+}
+.sk4_time p{
+    position: relative;
+    line-height:40px;
+    font-weight:bold;
+    font-size:20px;
+    color:#fff;
+}
+.sk_bd{
+    float:left;
+}
+.sk_bd .sk_list{
+    position: relative;
+    width: 810px;
+    height: 275px;
+    float:left;
+    overflow: hidden;
+}
+.sk_bd_img{
+    float:left;
+    width: 200px;
+    height: 275px;
+    position: relative;
+    border-right:solid 1px #f0f0f0;
+}
+.sk_bd_img img{
+    overflow: hidden;
+    left: 50%;
+    top:40px;
+    margin-left:-70px;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+}
+.sk_p{
+    position: absolute;
+    top:190px;
+    left:0;
+    width: 160px;
+    padding:0 15px;
+    line-height:30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+    text-align:center;
+    color:#666;
+}
+.sk_price{
+    position: absolute;
+    left: 15px;
+    top: 230px;
+    width: 160px;
+    height: 20px;
+    padding: 1px;
+    background: #e6382f;
+    line-height: 20px;
+    text-align:center;
+}
+.sk_price:hover{
+    cursor:pointer;
+}
+.sk_price1{
+    float: left;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.sk_price2{
+    float:left;
+    width: 80px;
+    height: 20px;
+    background-color: #fff;
+    text-align:center;
+    color:#b7bcb8;
+    font-size:12px;
+    text-decoration:line-through;
+}
+.sk_chn{
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 260px;
+    padding: 8px 10px 7px;
+}
+.sk_chn a{
+    float:left;
+    width: 180px;
+    display: block;
+    height: 100%;
+}
+.sk_chn1{
+    width: 180px;
+    height: 260px;
+    overflow:hidden;
+    position: relative;
+}
+.sk_chn1 img{
+    border:0;
+    vertical-align:middle;
+}
